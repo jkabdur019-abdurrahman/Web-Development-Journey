@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Step 3:HTML Tables & Forms</title>
+</head>
+<body>
+    <h1>HTML Tables & Forms</h1>
+    <!-- Data Table -->
+     <h2>Weekly Learning schedule</h2>
+     <table border="1" cellpadding="8">
+        <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Status</th>
+    </tr>
+    <tbody>
+        <tr>
+            <th>Day 1</th>
+            <th>HTML Basics</th>
+            <th>Completed</th>
+        </tr>
+    </tbody>
+    <tr>
+        <th>Day 2</th>
+        <th>Lists ,links,& images</th>
+        <th>Completed</th>
+    </tr> <tr>
+        <th>Day 3</th>
+        <th>Tables & Forms</th>
+        <th>Completed</th>
+    </tr>
+     </table>
+     <hr>
+     <hr>
+     <!-- Contact / Feedback form -->
+      <h2>Quick Feedback form !</h2>
+           <form action="">
+            <p>
+                <label for="student-name">Your name:</label><br>
+                <input type="text" id="student-name" name="studentName" placeholder="Enter your name" required>
+            </p>
+
+              <p>
+                <label for="student-email">Email address:</label><br>
+                <input type="text" id="student-email" name="studentEmail" placeholder="name@example.com" required>
+            </p>
+              <p>
+                <label for="student-massege">Message:</label><br>
+                <textarea  id="student-message" name="studentMessage"
+                 rows="4" cols="30" placeholder="Write your message....." required></textarea>
+                
+            </p>
+            <button type="submit">Submit Form</button>
+           </form>
+    </body>
+</html>   
