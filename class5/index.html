@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step:5 smart Forms & Tables</title>
+</head>
+<body>
+    <header><h1>Smart Forms & HTML Tables </h1>
+    <nav aria-label="section links">
+        <a href="#course-form">form</a><br>
+        <a href="#progress-table">progress</a><br>
+        <a href="#notes">notes</a>
+    </nav></header>
+    <main>
+        <!-- smart for section -->
+        <section id="course-form"></section>
+        <h2>practice Entry form</h2>
+        <form method="post">
+            <fieldset><legend>student info</legend>
+            <p>
+                <label for="fullName">fullName:</label><br>
+                <input type="text" id="fullName" name="fullName" required>
+            </p>
+        <p><label for="topic-code">Topic Code:(e.g. HTML 05,3 letter +2
+            digits):
+        </label><br>
+    <input type="text" id="Topic-code" name="Topic-code" 
+    
+    pattern="[A-Za]{3} [0,9]{2} " title="use 3 letters followed by 2 digits ,
+    like htm05" required></p>
+
+<p><label for="city">city</label><br><input type="text" id="city" name="city" list="city-list" placeholder="type or pick a city">
+<datalist id="city-list">
+    <option value="Peshawar">Peshawar</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Karachi">Karachi</option>
+</datalist></p>
+
+</fieldset>
+<fieldset>
+    <legend>session Details</legend>
+    <p><label for="minutes">practice Minutes Today :</label><br>
+    <input id="minutes" name="minutes" type="number" min="5" max="300" step="5" value="30"></p>
+    
+    <p><label id="ref-link" name="reflink" type="url"placeholder="https://developer.mozilla.org"></label></p>
+</fieldset>
+<p>
+    <button type="submit">save Entry </button>
+    <button id="Reset">Reset</button>
+</p>
+        </form>
+        <!-- Accessible Table section -->
+         <h2>weekly html practice notes</h2>
+         <table>
+            <caption>html steps overview</caption>
+           <thead> <tr>
+                <th scope="col">step</th>
+                <th scope="col">focus Area</th>
+                <th scope="col">status</th>
+            </tr>
+             <tr>
+                <th scope="row">step</th>
+                <th >basic tables & forms</th>
+                <th  >Done</th>
+            </tr>
+        
+        
+        <tr><th scope="row">step4</th>
+        <td>samantic layout</td>
+        <td>Done</td>
+    </tr>
+    <tfoot><tr><th></th>
+    <td scope="row" colspan="2">current phase</td>
+    <td>pure html5</td></tr>
+    </tfoot>
+        </thead>
+         </table>
+
+    </main>
+</body>
+</html>
